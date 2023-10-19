@@ -1,0 +1,66 @@
+@font-face {
+    font-family: clashDisplay-Medium;
+    src: url(../../assets/fonts/ClashDisplay-Medium.otf);
+}
+.heroSection{
+    min-height: 45rem;
+    max-height: 60rem;
+    height: 100vh;
+    background: linear-gradient(to left, transparent,#131313, #131313); 
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    /* margin-top: -5rem; */
+}
+.heroSection::before {
+    content: "";
+    background-image: url('../../assets/images/hero-section-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 45rem;
+    max-height: 60rem;
+    height: 100vh;
+    z-index: -1;
+}
+
+.name-head h1{
+    font-size: 6rem;
+    font-family: clashDisplay-Medium;
+    color: var(--white);
+}
+.name-head span{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--rubik);
+    font-weight: 300;
+}
+
+.social-icon{
+    height: 100%;
+    position: absolute;
+    right: 0.6rem;
+    top: 30%;
+}
+.social-icon a{
+    margin: 5px 0;
+    color: #c7c7c7;
+}
+.img-profile{
+    width: 70%;
+    position: absolute;
+    bottom: -1rem;
+    left: -3rem; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.side-element{
+    width: 1.875rem;
+    position: absolute;
+    left: 0.625rem;
+    top: 20rem;
+}
