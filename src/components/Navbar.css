@@ -1,0 +1,40 @@
+/* YourComponent.css */
+
+.nav-item {
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 4px; /* Adjust as needed */
+  }
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Adjust as needed */
+    background: linear-gradient(to right, #AF1EAF, #4EB7DB); /* Use your gradient colors */
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-item:hover::after {
+    transform: scaleX(1);
+  }
+  .nav-item:hover{
+        color: #AF1EAF;
+        font-weight: 700;
+  }
+
+  .nav-item.active::after {
+    transform: scaleX(1);
+  }
+  
+  .nav-item.active{
+    color: #AF1EAF;
+    font-weight: 700;
+}
+  
